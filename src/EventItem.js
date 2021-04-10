@@ -3,7 +3,7 @@ import React from 'react';
 import "./EventItem.css";
 import {Link} from "react-router-dom"
 
-function EventItem({url,title,description,float}) {
+const EventItem=({url,title,description,float},ref)=> {
     return (
         <div className="eventItem" style={{float: float}}>
             <div className="eventItem__left">

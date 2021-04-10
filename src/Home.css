@@ -3,7 +3,7 @@
 }
 
 img{
-    height: 90vh;
+    height: 90.5vh;
     width: 33.33vw;
 }
 
@@ -25,9 +25,18 @@ img{
     font-weight: bold; 
 }
 
+.home__description{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
 .home__description > p{
     font-family: 'Lobster', cursive;
-    color:yellow;
+    color:darkred;
     font-size: 35px;
 }
 

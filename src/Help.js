@@ -1,11 +1,89 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Help.css"
-import {Link} from "react-router-dom"
-import { Button } from '@material-ui/core'
+import { Button,Input } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import Modal from '@material-ui/core/Modal';
+
+
+function getModalStyle() {
+    const top = 50;
+    const left = 50
+  
+    return {
+      top: `${top}%`,
+      left: `${left}%`,
+      transform: `translate(-${top}%, -${left}%)`,
+    };
+  }
+  
+  const useStyles = makeStyles((theme) => ({
+    paper: {
+      position: 'absolute',
+      width: 400,
+      backgroundColor: theme.palette.background.paper,
+      border: '2px solid #000',
+      boxShadow: theme.shadows[5],
+      padding: theme.spacing(2, 4, 3),
+    },
+  }));
+  
 
 function Help() {
+
+    const classes=useStyles();
+  const [modalStyle] = useState(getModalStyle);
+  const [openModal,setOpenModal]=useState(false);
+  const [openPayment,setOpenPayment]=useState(false);
     return (
         <div className="help">
+            <Modal
+          open={openModal}
+          onClose={()=>setOpenModal(false)}
+          
+      >
+      <div style={modalStyle} className={classes.paper}>
+      <form className="help__modal">
+          <center>
+              <h1>Juntos</h1>
+          </center>
+        <Input
+          placeholder="Name"
+          type="text"
+        />
+        <Input
+          placeholder="Email"
+          type="email"
+        />
+        <Input
+            placeholder="Country"
+        />
+        <Input
+            placeholder="City"
+        />
+        <Input
+            placeholder="Street"
+        />
+        <Input
+            placeholder="House No"
+        />
+        <Button>Submit</Button>
+
+      </form>
+      </div>
+      </Modal>
+            <Modal
+          open={openPayment}
+          onClose={()=>setOpenPayment(false)}
+          
+      >
+      <div style={modalStyle} className={classes.paper}>
+            <div className="help__payment">
+            <img src="http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c530.png" alt=""/>
+            <img src=" https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/363_Visa_Credit_Card_logo-512.png" alt=""/>
+            </div>
+      </div>
+      </Modal>
+      
             <div className="help__cards">
                 <div className="help__card">
                     <div className="help__image">
@@ -15,9 +93,7 @@ function Help() {
                         <h2>Food</h2>
                         <p>If you want to share your foods with them click the button below and give your address we will pick them from you</p>
                         <div className="help__button">
-                            <Link to="/cloths">
-                            <Button>Proceed</Button>
-                            </Link>
+                            <Button onClick={()=>setOpenModal(true)}>Proceed</Button>
                         </div>
                     </div>
                 </div>
@@ -29,9 +105,7 @@ function Help() {
                         <h2>Cloths</h2>
                         <p>If you want to share your cloths with them click the button below and give your address we will pick them from you</p>
                         <div className="help__button">
-                            <Link to="/cloths">
-                            <Button>Proceed</Button>
-                            </Link>
+                        <Button onClick={()=>setOpenModal(true)}>Proceed</Button>
                         </div>
                     </div>
                 </div>
@@ -43,9 +117,8 @@ function Help() {
                         <h2>Money</h2>
                         <p>If you want to donate some money click the button below and choose any payment procedure you like</p>
                         <div className="help__button">
-                            <Link to="/cloths">
-                            <Button>Proceed</Button>
-                            </Link>
+                            
+                            <Button onClick={()=>setOpenPayment(true)}>Proceed</Button>
                         </div>
                     </div>
                 </div>

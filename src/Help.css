@@ -71,15 +71,54 @@
     margin-top:15px;
 }
 
-.help__button > a{
+.help__button > button{
     text-decoration:none;
     background-color:orangered;
     padding: 10px;
     color: white;
 }
 
-.help__button > a:hover{
+.help__button > button:hover{
     background-color:white;
     padding: 10px;
     color:orangered;
+}
+
+.help__modal{
+    display:flex;
+    flex-direction: column;
+}
+
+.help__modal > center >h1{
+    font-family: 'Lobster', cursive;
+    font-size:30px;
+    color:orangered;
+    font-weight: bold; 
+}
+
+
+.help__modal > button{
+    margin-top:20px;
+    text-decoration:none;
+    background-color:orangered;
+    padding: 10px;
+    color: white;
+}
+
+.help__modal > button:hover{
+    background-color:white;
+    padding: 10px;
+    color:orangered;
+}
+
+.help__payment{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.help__payment > img{
+    height:100px;
+    width:100px;
+    margin: 20px;
 }

@@ -18,7 +18,7 @@ function Contact() {
                     </div>
                     <div className="contact__info">
                         <p>Phone Number: 1-510-555-5555</p>
-                        <p>Email: discoverflow@gmail.com</p>
+                        <p>Email: juntos@gmail.com</p>
                         <p>Address: 123 Meadow Lane Oakland, CA 94607</p>
                     </div>
                 </div>
