@@ -1,10 +1,11 @@
 import { Button } from '@material-ui/core';
 import React from 'react';
-import "./EventItem.css"
+import "./EventItem.css";
+import {Link} from "react-router-dom"
 
-function EventItem({url,title,description}) {
+function EventItem({url,title,description,float}) {
     return (
-        <div className="eventItem" style={{float: 'left'}}>
+        <div className="eventItem" style={{float: float}}>
             <div className="eventItem__left">
                 <img src={url} alt=""/>
             </div>
@@ -16,7 +17,9 @@ function EventItem({url,title,description}) {
                     <p>{description}</p>
                 </div>
                 <div className="eventItem__button">
-                    <Button>Enter</Button>
+                    <Link to="/help">
+                    <Button>Help Them</Button>
+                    </Link>
                 </div>
             </div>
         </div>

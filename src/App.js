@@ -8,6 +8,9 @@ import {
 import Home from "./Home";
 import Event from "./Event";
 import Header from "./Header";
+import Help from "./Help";
+import About from "./About";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -15,7 +18,15 @@ function App() {
       <Router>
           <Header />
         <Switch>
-          
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/help">
+            <Help />
+          </Route>
           <Route path="/event">
             <Event />
           </Route>

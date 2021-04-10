@@ -1,11 +1,10 @@
 .home{
-    display:flex
+    display:flex;
 }
 
 img{
     height: 90vh;
     width: 33.33vw;
-    opacity: .9;
 }
 
 .home__text{

@@ -1,0 +1,55 @@
+.about{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url("https://www.insurancejournal.com/app/uploads/2014/01/Natural-Disasters.jpg");
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:90vh;
+}
+
+.about__container{
+    display:flex;
+    background-color: #fff;
+    height: 80vh;
+    width: 90vw;
+    border-radius:20px;
+}  
+
+.about__left{
+    flex:.35;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.about__left > img{
+    height: 70vh;
+    width: 300px;
+    border-radius:20px;
+}
+
+.about__right{
+    flex:.65;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.about__title{
+    background-color: orangered;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Racing Sans One', cursive;
+    text-shadow: 3px 3px black;
+    font-size:20px;
+}
+
+.about__paragraph{
+    width: 30vw;
+    font-size: 20px;
+    text-align: center;
+    margin-top:-50px;
+}
