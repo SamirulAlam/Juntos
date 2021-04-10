@@ -102,7 +102,7 @@ function Help() {
                         <img src="https://www.venuereport.com/media/cache/resolve/venue_roundup_single_image_flex/uploads/+0Regular_Roundup/NaturalDisasterRelief/SaveTheChildren-01.jpg" alt=""/>
                     </div>
                     <div className="help__content">
-                        <h2>Cloths</h2>
+                        <h2>Clothes</h2>
                         <p>If you want to share your cloths with them click the button below and give your address we will pick them from you</p>
                         <div className="help__button">
                         <Button onClick={()=>setOpenModal(true)}>Proceed</Button>
