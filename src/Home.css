@@ -1,0 +1,46 @@
+.home{
+    display:flex
+}
+
+img{
+    height: 90vh;
+    width: 33.33vw;
+    opacity: .9;
+}
+
+.home__text{
+    position:absolute;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    z-index: 99;
+    color: white;
+    height:70vh;
+    margin: 50px;  
+}
+
+.home__title > h1{
+    font-family: 'Lobster', cursive;
+    font-size:80px;
+    color:orangered;
+    font-weight: bold; 
+}
+
+.home__description > p{
+    font-family: 'Lobster', cursive;
+    color:yellow;
+    font-size: 35px;
+}
+
+.home__button > a{
+    text-decoration:none;
+    background-color:orangered;
+    padding: 10px;
+    color: white;
+}
+
+.home__button > a:hover{
+    background-color:white;
+    padding: 10px;
+    color:orangered;
+}

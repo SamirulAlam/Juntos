@@ -1,0 +1,39 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:20px;
+    padding-right:5px;
+}
+
+.header__title > h1{
+    font-family: 'Lobster', cursive;
+    font-size:30px;
+    color:orangered;
+    font-weight: bold; 
+}
+
+.header__right {
+    display:flex;
+}
+
+.header__about{
+    margin:5px;
+    padding-top:10px;
+}
+
+.header__contact{
+    margin: 5px;
+    padding-top:10px;
+}
+
+.header__about > a{
+    text-decoration:none;
+    color: black;
+    margin-right: 5px;
+}
+.header__contact > a{
+    text-decoration:none;
+    color: black;
+    margin-right: 5px;
+}
